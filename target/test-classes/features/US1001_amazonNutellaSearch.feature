@@ -3,7 +3,7 @@ Feature: US 1001 User will search for Nutella in Amazon
   Scenario: TC01 User will search for Nutella
 
     Given user goes to amazon homepage
-    Then user searchs for Nutella in search box
+    Then user searches for Nutella in search box
     And tests that result text contains Nutella word
     Then closes the page
 

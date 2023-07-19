@@ -64,6 +64,11 @@ public class Driver {
 
 
             }
+
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            }
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
@@ -77,6 +82,10 @@ public class Driver {
     // to close opened driver // if a driver is opened, this method will close it. If there is no drider, it wont do anything
     public static void closeDriver(){
         if (driver!=null) {
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            }
             driver.close();
             driver=null;
         }
@@ -86,6 +95,10 @@ public class Driver {
     public static void quitDriver(){
 
         if (driver!=null) {
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            }
             driver.quit();
             driver=null;
         }

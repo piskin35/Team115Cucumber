@@ -24,10 +24,9 @@ public class AmazonStepDefinitions {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
 
-    @Then("user searchs for Nutella in search box")
-    public void user_searchs_for_nutella_in_search_box() {
+    @Then("user searches for Nutella in search box")
+    public void user_searches_for_nutella_in_search_box() {
         amazonPage = new AmazonPage();
-
 
         amazonPage.amazonSearchBox.sendKeys("Nutella"+ Keys.ENTER);
     }
@@ -50,4 +49,66 @@ public class AmazonStepDefinitions {
     }
 
 
+    @Then("user searches for TeaPot in search box")
+    public void userSearchesForTeaPotInSearchBox() {
+
+        amazonPage = new AmazonPage();
+        amazonPage.amazonSearchBox.sendKeys("TeaPot" + Keys.ENTER);
+    }
+
+    @And("tests that result text contains TeaPot word")
+    public void testsThatResultTextContainsTeaPotWord() {
+
+        amazonPage = new AmazonPage();
+        String actualText = amazonPage.amazonResultTextBox.getText();
+        String expected = "TeaPot";
+
+        Assert.assertTrue(actualText.contains(expected));
+    }
+
+    @Then("user searches for flower in search box")
+    public void userSearchesForFlowerInSearchBox() {
+        amazonPage = new AmazonPage();
+        amazonPage.amazonSearchBox.sendKeys("flower" + Keys.ENTER);
+    }
+
+    @And("tests that result text contains Flower word")
+    public void testsThatResultTextContainsFlowerWord() {
+        amazonPage = new AmazonPage();
+        String actualText = amazonPage.amazonResultTextBox.getText();
+        String expected = "flower";
+
+        Assert.assertTrue(actualText.contains(expected));
+    }
+
+    @Then("user searches for {string} in search box")
+    public void userSearchesForInSearchBox(String word) {
+
+        amazonPage = new AmazonPage();
+        amazonPage.amazonSearchBox.sendKeys(word + Keys.ENTER);
+    }
+
+
+    @And("tests that result text contains {string} word")
+    public void testsThatResultTextContainsWord(String word) {
+        amazonPage = new AmazonPage();
+        String actualText = amazonPage.amazonResultTextBox.getText();
+        String expected = word;
+
+        Assert.assertTrue(actualText.contains(expected));
+    }
+
+    @Given("user goes to {string} homepage")
+    public void userGoesToHomepage(String desiredUrl) {
+
+        Driver.getDriver().get(ConfigReader.getProperty(desiredUrl));
+    }
+
+    @Then("tests that url has {string} word")
+    public void testsThatUrlHasWord(String urlWord) {
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        String expectedWord = urlWord;
+
+        Assert.assertTrue(actualUrl.contains(expectedWord));
+    }
 }
