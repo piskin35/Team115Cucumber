@@ -1,6 +1,8 @@
+
+
 Feature: US1008 Negative Login Test
 
-
+  @smoke
   Scenario: TC11 Negative Login Test with valid Email and Invalid Password
 
     Given user goes to "qdUrl" homepage

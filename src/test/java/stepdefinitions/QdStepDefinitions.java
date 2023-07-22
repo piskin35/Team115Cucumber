@@ -41,6 +41,16 @@ public class QdStepDefinitions {
         qdPage.loginPagePasswordTextBox.sendKeys(ConfigReader.getProperty(desiredPassword));
     }
 
+    @Then("user1 enters {string} to emailTextBox")
+    public void user1_enters_to_email_text_box(String desiredEmail) {
+        qdPage.loginPageEmailTextBox.sendKeys(ConfigReader.getProperty(desiredEmail));
+    }
+    @Then("user1 enters {string} to passwordTextBox")
+    public void user1_enters_to_password_text_box(String desiredPassword) {
+        qdPage.loginPagePasswordTextBox.sendKeys(ConfigReader.getProperty(desiredPassword));
+    }
+
+
     @Then("test that user could not be able to login")
     public void test_that_user_could_not_be_able_to_login() {
         Assert.assertTrue(qdPage.loginPageEmailTextBox.isDisplayed());
