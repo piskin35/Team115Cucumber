@@ -1,3 +1,4 @@
+@smokeTest @p2
 Feature: US 1004 Using parameters on test steps
 
 #    If we want to create a dynamic method we can enter parameters when we create the method

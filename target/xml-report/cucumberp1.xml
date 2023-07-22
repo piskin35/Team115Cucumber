@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="99.605" tests="7" skipped="0" failures="4" errors="0">
+<testcase classname="US 1004 Using parameters on test steps" name="TC04 we will create new methods where we can use parameters" time="26.893">
+<system-out><![CDATA[
+Given user goes to amazon homepage..........................................passed
+Then user searches for "Nutella" in search box..............................passed
+And tests that result text contains "Nutella" word..........................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US 1004 Using parameters on test steps" name="TC05 we will create new methods where we can use parameters" time="20.552">
+<system-out><![CDATA[
+Given user goes to amazon homepage..........................................passed
+Then user searches for "Apple" in search box................................passed
+And tests that result text contains "Apple" word............................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US 1004 Using parameters on test steps" name="TC05 we will create new methods where we can use parameters" time="16.874">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.AmazonStepDefinitions.testsThatResultTextContainsWord(AmazonStepDefinitions.java:98)
+	at ✽.tests that result text contains "Teapot" word(file:///C:/Users/piski/IdeaProjects/com.Team115Cucumber/src/test/resources/features/US1004_usingParameters.feature:31)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user goes to amazon homepage..........................................passed
+Then user searches for "TeaPot" in search box...............................passed
+And tests that result text contains "Teapot" word...........................failed
+Then closes the page........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US 1004 Using parameters on test steps" name="TC05 we will create new methods where we can use parameters" time="14.079">
+<system-out><![CDATA[
+Given user goes to amazon homepage..........................................passed
+Then user searches for "flower" in search box...............................passed
+And tests that result text contains "flower" word...........................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Negative Login Test" name="TC11 Negative Login Test with valid Email and Invalid Password" time="12.106">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn red radius-5 mt-4 w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (1089, 540). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d03f70ecc2016e2888acedfc6221be40, clickElement {id=403CCEC7260AECD5DF254377D75EBB40_element_39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\piski\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d03f70ecc2016e2888acedfc6221be40)] -&gt; xpath: //button[@class='btn red radius-5 mt-4 w-100']]
+Session ID: d03f70ecc2016e2888acedfc6221be40">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn red radius-5 mt-4 w-100">...</button> is not clickable at point (1089, 540). Other element would receive the click: <p>...</p>
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d03f70ecc2016e2888acedfc6221be40, clickElement {id=403CCEC7260AECD5DF254377D75EBB40_element_39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\piski\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d03f70ecc2016e2888acedfc6221be40)] -> xpath: //button[@class='btn red radius-5 mt-4 w-100']]
+Session ID: d03f70ecc2016e2888acedfc6221be40
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at stepdefinitions.QdStepDefinitions.user_click_on_login_page_login_button(QdStepDefinitions.java:28)
+	at ✽.user click on loginPage login button(file:///C:/Users/piski/IdeaProjects/com.Team115Cucumber/src/test/resources/features/US1008_withParametersNegativeLoginTest.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user goes to "qdUrl" homepage.........................................passed
+Then user click on qdHomePage login button..................................passed
+And user enters "qdValidUserName" to emailTextBox...........................passed
+And user enters "qdInvalidPassword" to passwordTextBox......................passed
+And user click on loginPage login button....................................failed
+And test that user could not be able to login...............................skipped
+And closes the page.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Negative Login Test" name="TC12 Negative Login Test with invalid Email and valid Password" time="4.032">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn red radius-5 mt-4 w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (1089, 540). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d03f70ecc2016e2888acedfc6221be40, clickElement {id=EA27187EE571BB526D69425BEFDB2E01_element_53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\piski\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d03f70ecc2016e2888acedfc6221be40)] -&gt; xpath: //button[@class='btn red radius-5 mt-4 w-100']]
+Session ID: d03f70ecc2016e2888acedfc6221be40">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn red radius-5 mt-4 w-100">...</button> is not clickable at point (1089, 540). Other element would receive the click: <p>...</p>
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d03f70ecc2016e2888acedfc6221be40, clickElement {id=EA27187EE571BB526D69425BEFDB2E01_element_53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\piski\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d03f70ecc2016e2888acedfc6221be40)] -> xpath: //button[@class='btn red radius-5 mt-4 w-100']]
+Session ID: d03f70ecc2016e2888acedfc6221be40
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at stepdefinitions.QdStepDefinitions.user_click_on_login_page_login_button(QdStepDefinitions.java:28)
+	at ✽.user click on loginPage login button(file:///C:/Users/piski/IdeaProjects/com.Team115Cucumber/src/test/resources/features/US1008_withParametersNegativeLoginTest.feature:23)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user goes to "qdUrl" homepage.........................................passed
+Then user click on qdHomePage login button..................................passed
+And user enters "qdInvalidUserName" to emailTextBox.........................passed
+And user enters "qdValidPassword" to passwordTextBox........................passed
+And user click on loginPage login button....................................failed
+And test that user could not be able to login...............................skipped
+And closes the page.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Negative Login Test" name="TC13 Negative Login Test with valid Email and Invalid Password" time="4.637">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn red radius-5 mt-4 w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (1089, 540). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d03f70ecc2016e2888acedfc6221be40, clickElement {id=E89E3A330BB943D4FEAEAE5DCD8798F5_element_66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\piski\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d03f70ecc2016e2888acedfc6221be40)] -&gt; xpath: //button[@class='btn red radius-5 mt-4 w-100']]
+Session ID: d03f70ecc2016e2888acedfc6221be40">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn red radius-5 mt-4 w-100">...</button> is not clickable at point (1089, 540). Other element would receive the click: <p>...</p>
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d03f70ecc2016e2888acedfc6221be40, clickElement {id=E89E3A330BB943D4FEAEAE5DCD8798F5_element_66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\piski\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d03f70ecc2016e2888acedfc6221be40)] -> xpath: //button[@class='btn red radius-5 mt-4 w-100']]
+Session ID: d03f70ecc2016e2888acedfc6221be40
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at stepdefinitions.QdStepDefinitions.user_click_on_login_page_login_button(QdStepDefinitions.java:28)
+	at ✽.user click on loginPage login button(file:///C:/Users/piski/IdeaProjects/com.Team115Cucumber/src/test/resources/features/US1008_withParametersNegativeLoginTest.feature:33)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user goes to "qdUrl" homepage.........................................passed
+Then user click on qdHomePage login button..................................passed
+And user enters "qdInvalidUserName" to emailTextBox.........................passed
+And user enters "qdInvalidPassword" to passwordTextBox......................passed
+And user click on loginPage login button....................................failed
+And test that user could not be able to login...............................skipped
+And closes the page.........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

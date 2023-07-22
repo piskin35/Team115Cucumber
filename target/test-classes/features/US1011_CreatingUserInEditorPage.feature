@@ -1,5 +1,5 @@
 
-  @testing
+@wip3
   Feature: US1011 creating user
     Scenario Outline: TC16 Creating a lot of users
 
@@ -19,7 +19,7 @@
 
       Examples:
         | firstname | lastname | position  | office | extension | startDate  | salary |
-        |||| USA    | Canada    | 2023-05-03 | 2500   |
+        | Ahmet     | Brown    | QA        | USA    | Canada    | 2023-05-03 | 2500   |
         | Hasan     | Yellow   | Director  | Eu     | Eng       | 2023-05-05 | 3000   |
         | Murat     | Black    | Developer | Eu     | TR        | 2022-05-03 | 3500   |
         | Ali       | Can      | QA        | USA    | Canada    | 2021-05-03 | 2500   |

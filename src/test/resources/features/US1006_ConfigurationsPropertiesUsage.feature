@@ -1,4 +1,4 @@
-
+@p1
 Feature: US1006 How to use configuration properties file
 
 #  To reach any value from configuration.properties file we need to use parameters.Scenario:
