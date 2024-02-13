@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.AmazonPage;
+import pages.EditorPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -21,14 +22,15 @@ public class AmazonStepDefinitions {
     @Given("user goes to amazon homepage")
     public void user_goes_to_amazon_homepage() {
 
-        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+        Driver.getDriver().get("https://www.amazon.com/");
     }
 
     @Then("user searches for Nutella in search box")
     public void user_searches_for_nutella_in_search_box() {
         amazonPage = new AmazonPage();
 
-        amazonPage.amazonSearchBox.sendKeys("Nutella"+ Keys.ENTER);
+        amazonPage.amazonSearchBox.sendKeys("Nutella" + Keys.ENTER);
+
     }
 
     @Then("tests that result text contains Nutella word")
@@ -36,6 +38,7 @@ public class AmazonStepDefinitions {
         amazonPage = new AmazonPage();
         String expectedWord = "Nutella";
         String actualResultText =amazonPage.amazonResultTextBox.getText();
+
 
         Assert.assertTrue(actualResultText.contains(expectedWord));
 
